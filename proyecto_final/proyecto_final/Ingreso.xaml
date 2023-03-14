@@ -1,0 +1,32 @@
+﻿<Page x:Class="proyecto_final.Ingreso"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:proyecto_final"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Ingreso">
+
+    <Grid Background="#FF0A194A" HorizontalAlignment="Center">
+        <TextBlock x:Name="usuario" HorizontalAlignment="Left" Margin="462,95,0,0" TextWrapping="Wrap" Text="Ingrese usuario" VerticalAlignment="Top" Height="53" Width="166" FontSize="20" Panel.ZIndex="2" Foreground="White" FontFamily="Cascadia Code SemiBold"/>
+        <TextBox x:Name="Ingreso_user" HorizontalAlignment="Left" Margin="462,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" Height="39" TextChanged="Ingreso_user_TextChanged" Panel.ZIndex="2"/>
+        <Button x:Name="iniciar_sesion" Content="Iniciar Sesion" HorizontalAlignment="Left" Margin="462,346,0,0" VerticalAlignment="Top" Height="50" Width="144" FontSize="16" Click="iniciar_sesion_Click" Panel.ZIndex="2" FontFamily="Cascadia Code SemiBold" Background="#FF999BBF"/>
+        <TextBlock x:Name="contraseña" HorizontalAlignment="Left" Margin="462,218,0,0" TextWrapping="Wrap" Text="Ingrese contraseña" VerticalAlignment="Top" Height="42" Width="188" FontSize="20" Panel.ZIndex="2" Foreground="White" FontFamily="Cascadia Code SemiBold"/>
+        <TextBox x:Name="Ingreso_password" HorizontalAlignment="Left" Margin="462,281,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" Height="39" TextChanged="Ingreso_pass_TextChanged" Panel.ZIndex="2"/>
+        <Button x:Name="volver" Content="Volver" HorizontalAlignment="Left" Margin="67,358,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="39" Width="91" Click="volver_Click" Panel.ZIndex="2" FontFamily="Cascadia Code SemiBold" FontSize="16" Background="#FF999BBF">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.543"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Image Margin="19,10,569,239" Source="/CUDI-principal-1.png" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Margin="464,39,0,0" TextWrapping="Wrap" Text="Administradores" VerticalAlignment="Top" FontSize="22" FontFamily="Cascadia Code SemiBold" Foreground="White"/>
+        
+    </Grid>
+
+</Page>

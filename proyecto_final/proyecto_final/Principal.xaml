@@ -1,0 +1,29 @@
+﻿<Page x:Name="page" x:Class="proyecto_final.Principal"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:proyecto_final"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Principal">
+
+    <Grid Background="#FF0A194A" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Label x:Name="horaActual" Content="Hora" Margin="19,285,369,65" FontSize="48" FontFamily="Cascadia Mono SemiBold"/>
+        <TextBlock x:Name="Ingresar_id" HorizontalAlignment="Left" Margin="448,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="147" FontSize="20" FontFamily="Cascadia Mono SemiBold" FontWeight="Bold" Foreground="White"><Run Text="Ingresar"/><Run Language="es-es" Text=" ID"/><LineBreak/><Run Language="es-es"/></TextBlock>
+        <TextBox x:Name="ID" HorizontalAlignment="Left" Margin="451,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" Height="29" TextChanged="ID_TextChanged" Panel.ZIndex="1" FontFamily="Cascadia Code SemiBold"/>
+        <Button x:Name="confirmar" Content="Confirmar" Margin="451,206,0,0" VerticalAlignment="Top" Click="confirmar_Click" Height="35" Width="115" FontSize="14" FontFamily="Cascadia Code SemiBold" Background="#FF999BBF" HorizontalAlignment="Left" Cursor="Arrow"/>
+        <Button x:Name="Admin" Content="Administracion" HorizontalAlignment="Left" Margin="451,345,0,0" VerticalAlignment="Top" Click="Admin_Click" Background="#FF9B9BBF" FontSize="14" FontFamily="Cascadia Code SemiBold" Height="33" Width="130"/>
+        <Image Margin="19,10,569,244" Source="/CUDI-principal-1.png" Stretch="Fill"/>
+        <Image Margin="410,140,92,236" Source="/d52lj31-f3a3f950-4593-4699-8085-a78a30be96c2.png" Stretch="Fill" Opacity="0.5">
+            <Image.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Image.OpacityMask>
+        </Image>
+        <TextBlock HorizontalAlignment="Left" Margin="454,30,0,0" TextWrapping="Wrap" Text="Registro de asistencia" VerticalAlignment="Top" FontSize="24" FontFamily="Cascadia Code SemiBold" Foreground="White" Height="56" Width="182"/>
+
+    </Grid>
+</Page>
